@@ -1,0 +1,53 @@
+body{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+div{
+    position: absolute;
+}
+
+#brilhos{
+    filter: drop-shadow(0 0 10px #df0000);
+    animation: brilhos infinite 0.2s;
+}
+
+@keyframes brilhos {
+    25%{
+        filter: drop-shadow(0 0 40px #df0000);
+    }
+    50%{
+        filter: drop-shadow(0 0 20px #df0000);
+
+    }
+    75%{
+        filter: drop-shadow(0 0 30px #df0000);
+    }
+}
+
+.container {
+    position: absolute;
+    width: 200%;
+    height: 100vh;
+    background-image: url(../images/963.jpg);
+    background-size: cover;
+}
+
+.nuvens {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/cloud.png);
+    background-size: cover;
+    opacity: 0.2;
+    animation: nuvem 60s linear infinite;
+}
+
+@keyframes nuvem {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -5440px;
+    }
+}
